@@ -1,0 +1,89 @@
+{
+    "root": {
+        "accounts": [
+          {
+            "mccmcc+sharedservices@amazon.com": {
+                "name": "sharedservices"
+            }
+          },
+          {
+            "mccmcc+robo@amazon.com": {
+                "name": "robo"
+            }
+          },
+          {
+            "mccmcc+r66y@amazon.com": {
+                "name": "r66y"
+            }
+          },
+          {
+            "mccmcc+corp01@amazon.com": {
+                "name": "corp1"
+            }
+          },
+          {
+            "mccmcc+corp02@amazon.com": {
+                "name": "corp2"
+            }
+          },
+          {
+            "mccmcc+corp03@amazon.com": {
+                "name": "corp3"
+            }
+          },
+          {
+            "mccmcc+fieldoffice01@amazon.com": {
+                "name": "fieldoffice01"
+            }
+          }
+        ],
+        "units": [
+          {
+            "security": {
+                "name": "securityservices",
+                "accounts": [
+                    {
+                      "mccmcc+securityservices@amazon.com": {
+                          "name": "securityservices"
+                      }
+                    }
+                  ],
+                  "units": [
+                    {
+                      "forensics": {
+                          "name": "forensics"
+                        }
+                    },
+                    {
+                      "tenable": {
+                          "name": "tenable"
+                        }
+                    }
+                  ]
+              }
+          },
+          {
+            "infrastructure": {
+                "name": "infrastructure",
+                  "units": [
+                    {
+                      "development": {
+                          "name": "development"
+                        }
+                    },
+                    {
+                      "testing": {
+                          "name": "testing"
+                        }
+                    },
+                    {
+                      "production": {
+                          "name": "production"
+                        }
+                    }
+                  ]
+              }
+          }
+        ]
+    }
+}
